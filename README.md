@@ -1,2 +1,2 @@
-# SChool-project
+# School-project
 Use R languages to do data analysis &amp; statistical and quantitative analysis.
