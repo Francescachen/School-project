@@ -1,0 +1,106 @@
+---
+title: "Does step count improve feelings of activiness?"
+author: "Chen Yihua (Francesca)"
+date: '2022-06-15'
+output: html_document
+---
+
+# Load library package
+```{r}
+library(tidyverse)
+library(skimr)
+library(ggplot2)
+library(ggcorrplot)
+library(gmodels)
+```
+
+
+# Import data
+```{r}
+ft = read.csv('fitness_trends.csv',sep = ',')
+```
+
+
+#Prepare data
+```{r}
+ft$mood = as.factor(ft$mood)
+ft$bool_of_active = as.factor(ft$bool_of_active)
+```
+
+
+# Data description
+```{r}
+summary(ft)
+```
+
+
+#Assumption of t.test
+y is a numeric variable:step_count
+x is a categorical variable with two groups:bool_of_active
+```{r}
+t.test(ft$step_count~ ft$bool_of_active)
+```
+
+
+# Check the normality assumption of y(step_count)
+
+#by histogram
+```{r}
+hist(ft$step_count, col = "indianred1" )
+```
+
+#by normality test
+```{r}
+shapiro.test(ft$step_count)
+```
+
+It seems that step count does not follow normal distribution.
+So we can’t use t-test in this case.
+Instead, We should use The Wilcoxon-Mann-Whitney test.
+
+
+# Hypothesis Testing
+#The Wilcoxon-Mann-Whitney test
+```{r}
+wilcox.test(ft$step_count~ ft$bool_of_active)
+
+```
+P>0.05, there is no significant difference.
+The step count do not improve the feelings of active.
+
+
+# The relationships between factors
+#corrplot in all variables
+```{r}
+model.matrix(~0+., data=ft[,-1]) %>% 
+  cor(use="pairwise.complete.obs") %>% 
+  ggcorrplot(show.diag = F, type="lower", lab=TRUE, lab_size=2)
+```
+
+# Main Findinggs
+#The step count do not improve the feelings of active.
+#Potential Reasons:
+#The data is recorded only from one person instead of large population.
+#Many reasons can affect the activeness, such as environment, learning barrier, and  bad performance on exam.. etc.
+
+
+# Other Findings
+#linear and scatter plot between step_count and calories_burned
+```{r}
+ggplot(ft, aes(x=step_count, y=calories_burned)) + 
+  geom_point()+
+  geom_smooth()
+```
+
+#Violin figure of mood and step_count
+```{r}
+ggplot(ft, aes(x=mood, y=step_count, fill=mood)) +
+  geom_violin(trim=FALSE)+
+  geom_boxplot(width=0.1) + theme_minimal()
+```
+
+
+
+  
+  
+  
