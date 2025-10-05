@@ -1,5 +1,6 @@
 # School-project
-I was responsible for the entire programming process for both term projects using R.
+I was responsible for the data analysis and visualization for both term projects using R.  
 
-For the first project, I performed data analysis to determine which model better predicts trading performance.
-For the second project, I conducted statistical and quantitative analyses to identify relationships among variables in fitness data.
+Project 1: Analyzed and visualized trading data to determine which model best predicts trading performance.  
+
+Project 2: Conducted statistical analysis and visualized relationships among variables in fitness data.
