@@ -66,20 +66,17 @@ Therefore, based on this data, we do not find sufficient evidence that step coun
 
 ### 2️⃣ Relationships Between Other Factors
 #### Step Count vs. Calories Burned:
-The analysis showed a strong and positive correlation between step_count and calories_burned.  
-
-<img width="548" height="350" alt="Screenshot 2025-10-07 at 11 03 09 PM" src="https://github.com/user-attachments/assets/bcc2debf-81c2-46fe-884e-cc368bde0cdf" />
-
 The analysis reveals a strong and positive correlation between step count and calories burned.
 This indicates that individuals who walk more steps generally expend more energy, confirming that step count is a reliable indicator of overall physical activity.
 
+<img width="548" height="350" alt="Screenshot 2025-10-07 at 11 03 09 PM" src="https://github.com/user-attachments/assets/bcc2debf-81c2-46fe-884e-cc368bde0cdf" />
+
 #### Step Count vs. Mood:
 The distribution of step_count appears to be slightly higher for individuals reporting a Neutral (200) or Happy (300) mood compared to those reporting a Sad (100) mood.  
+This suggests that greater physical activity may be associated with more positive emotional states, though further research is needed to confirm causality.
 
 <img width="455" height="436" alt="Screenshot 2025-10-07 at 11 00 56 PM" src="https://github.com/user-attachments/assets/da33e5f0-214e-4be3-87c1-32c1780ce57f" />
 
-The data shows that individuals reporting Neutral or Happy moods tend to have slightly higher step counts compared to those feeling Sad.
-This suggests that greater physical activity may be associated with more positive emotional states, though further research is needed to confirm causality.
 
 ### ⚠️ Limitations and Discussion
 The main finding that step count does not improve activeness must be interpreted within the context of the data’s limitations:
