@@ -3,9 +3,72 @@ I was responsible for the data analysis and visualization for both term projects
 
 ### PROJECT 1: Determine which model best predicts trading performance.  
 
-### PROJECT 2: Does Exercise Improve a Person’s Activeness?
+### 📝 Project Overview
+This project investigates which model best predicts trading performance in the Taiwan shipping industry.
+We analyze candlestick signals — Morning Star and Dark Cloud Cover — together with the Relative Strength Index (RSI) indicator to assess their predictive power for profitable trading.
+Motivated by the impact of the COVID-19 pandemic on global markets, when most industries faced severe losses while the shipping sector experienced remarkable growth, this study aims to identify which trading strategy achieves a higher cumulative return and win rate.
 
-Relationship Between Exercise Level and Feelings of Activeness
+---
+
+💡 Innovation
+Rather than relying on a single technical signal, we designed two trading models for comparison:
+Strategy 1 (Candlestick Pattern-based):
+Uses Morning Star (bullish reversal) and Dark Cloud Cover (bearish reversal) to generate buy/sell signals.
+Strategy 2 (RSI-based):
+Utilizes RSI momentum indicators (RSI6, RSI14, RSI24), Gold Cross, and Death Cross to predict market entry and exit points.
+By comparing both, we aimed to determine which strategy better reflects and predicts real market behavior.
+
+---
+
+⚙️ Methodology
+Define Signals
+Strategy 1: Candlestick Patterns
+Buy: When a Morning Star pattern appears.
+Sell: When a Dark Cloud Cover pattern forms.
+Strategy 2: RSI Indicators
+Buy:
+RSI6 < RSI20, or
+RSI6 crosses upward through RSI24, or
+A Gold Cross appears.
+Sell:
+RSI6 > RSI80, or
+RSI6 crosses downward through RSI24, or
+A Death Cross appears.
+Conflict: No action is taken when signals disagree.
+
+---
+
+📈 Evaluation Metrics
+We assessed both strategies across major shipping stocks listed on the Taiwan Stock Exchange, including Evergreen Marine (2603), Yang Ming (2609), Wan Hai Lines (2615), and others.
+Metrics:
+Cumulative Rate of Return
+Win Rate (Trade Success Ratio)
+
+Result Summary:
+| Metric              | Strategy 1 (Candlestick) | Strategy 2 (RSI)        |
+| ------------------- | ------------------------ | ----------------------- |
+| Average Win Rate    | 0.17                     | **0.49**                |
+| Overall Performance | -                        | **RSI performs better** |
+
+---
+
+🧠 Key Findings
+Morning Star effectively identifies bullish reversals, especially when confirmed with high volume.
+Dark Cloud Cover signals bearish reversals but performs best when combined with RSI confirmation.
+The RSI-based model showed more consistent profitability across stocks, proving better for predicting trading performance.
+“Nobody can always win in the market — but if we win big and lose small, we are the real winners.”
+
+---
+
+📊 Conclusion
+The RSI Strategy outperformed the Candlestick-based approach in predicting profitable trades.
+Combining technical indicators (RSI + Candlestick patterns) further improves accuracy and risk management, offering a more reliable guide for traders in the volatile shipping sector.
+
+---
+
+## ⚙️ Tools Used
+Language: R (quantmod, TTR, PerformanceAnalytics)
+Data: Taiwan Stock Exchange shipping companies
 
 ---
 
@@ -91,6 +154,6 @@ However, step count was strongly correlated with calories burned and slightly hi
 These findings suggest that while step count may not directly improve activeness, consistent movement supports both physical health and positive mood.
 
 ## ⚙️ Tools Used
-R (tidyverse, ggplot2)
+Language: R (tidyverse, ggplot2)
 R Markdown for reporting and visualization
-Kaggle dataset for source data
+Data: Kaggle dataset
