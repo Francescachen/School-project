@@ -11,7 +11,7 @@ Relationship Between Exercise Level and Feelings of Activeness
 
 ### 📝 Project Overview
 
-This project is a inal course assignment that investigates the relationship between an individual's **exercise level** (measured by daily step count) and their **self-reported feeling of activeness**.
+This project is a final course assignment that investigates the relationship between an individual's **exercise level** (measured by daily step count) and their **self-reported feeling of activeness**.
 
 The motivation stems from common issues faced during the pandemic, such as weight gain, laziness, insomnia, and anxiety attacks.  
 The core hypothesis tested is:
