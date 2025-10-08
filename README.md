@@ -11,9 +11,9 @@ Relationship Between Exercise Level and Feelings of Activeness
 
 ### 📝 Project Overview
 
-This project is a **final course assignment (CP122 Final Project)** that investigates the relationship between an individual's **exercise level** (measured by daily step count) and their **self-reported feeling of activeness**.
+This project is a inal course assignment that investigates the relationship between an individual's **exercise level** (measured by daily step count) and their **self-reported feeling of activeness**.
 
-The motivation stems from common issues faced during the pandemic, such as **weight gain, laziness, insomnia, and anxiety attacks**.  
+The motivation stems from common issues faced during the pandemic, such as weight gain, laziness, insomnia, and anxiety attacks.  
 The core hypothesis tested is:
 
 > 💭 Does step count significantly improve feelings of activeness?
@@ -90,7 +90,8 @@ Confounding Factors – Activeness is likely influenced by numerous factors beyo
 ### 🧩 Conclusion
 This project explored whether exercise, measured by step count, improves a person’s feeling of activeness.
 The Wilcoxon–Mann–Whitney test (p = 0.2447 > 0.05) showed no significant difference between the “active” and “inactive” groups, suggesting that step count alone may not directly enhance perceived activeness.
-Still, additional findings revealed strong and positive correlations between step count and calories burned, as well as slightly higher step counts among participants with neutral or happy moods. These results suggest that while step count may not directly increase activeness, regular physical activity could support both physical health and positive emotional states.
+However, step count was strongly correlated with calories burned and slightly higher among those with neutral or happy moods.  
+These findings suggest that while step count may not directly improve activeness, consistent movement supports both physical health and positive mood.
 
 ## ⚙️ Tools Used
 R (tidyverse, ggplot2)
