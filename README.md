@@ -10,7 +10,7 @@ Motivated by the impact of the COVID-19 pandemic on global markets, when most in
 
 ---
 
-💡 Innovation
+### 💡 Innovation
 Rather than relying on a single technical signal, we designed two trading models for comparison:
 Strategy 1 (Candlestick Pattern-based):
 Uses Morning Star (bullish reversal) and Dark Cloud Cover (bearish reversal) to generate buy/sell signals.
@@ -20,7 +20,7 @@ By comparing both, we aimed to determine which strategy better reflects and pred
 
 ---
 
-⚙️ Methodology
+### ⚙️ Methodology
 Define Signals
 Strategy 1: Candlestick Patterns
 Buy: When a Morning Star pattern appears.
@@ -38,7 +38,7 @@ Conflict: No action is taken when signals disagree.
 
 ---
 
-📈 Evaluation Metrics
+### 📈 Evaluation Metrics  
 We assessed both strategies across major shipping stocks listed on the Taiwan Stock Exchange, including Evergreen Marine (2603), Yang Ming (2609), Wan Hai Lines (2615), and others.
 Metrics:
 Cumulative Rate of Return
@@ -52,7 +52,7 @@ Result Summary:
 
 ---
 
-🧠 Key Findings
+### 🔑 Key Findings 
 Morning Star effectively identifies bullish reversals, especially when confirmed with high volume.
 Dark Cloud Cover signals bearish reversals but performs best when combined with RSI confirmation.
 The RSI-based model showed more consistent profitability across stocks, proving better for predicting trading performance.
@@ -60,7 +60,7 @@ The RSI-based model showed more consistent profitability across stocks, proving 
 
 ---
 
-📊 Conclusion
+### 📊 Conclusion
 The RSI Strategy outperformed the Candlestick-based approach in predicting profitable trades.
 Combining technical indicators (RSI + Candlestick patterns) further improves accuracy and risk management, offering a more reliable guide for traders in the volatile shipping sector.
 
@@ -71,6 +71,8 @@ Language: R (quantmod, TTR, PerformanceAnalytics)
 Data: Taiwan Stock Exchange shipping companies
 
 ---
+
+### PROJECT 2: Identify relationships among variables in fitness data.
 
 ### 📝 Project Overview
 
