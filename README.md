@@ -40,6 +40,8 @@ Conflict: No action is taken when signals disagree.
 
 ### 📈 Evaluation Metrics  
 We assessed both strategies across major shipping stocks listed on the Taiwan Stock Exchange, including Evergreen Marine (2603), Yang Ming (2609), Wan Hai Lines (2615), and others.
+<img width="975" height="406" alt="image" src="https://github.com/user-attachments/assets/857a73f1-7ed9-4e20-9274-8c4c4973351b" />
+
 Metrics:
 Cumulative Rate of Return
 Win Rate (Trade Success Ratio)
@@ -66,7 +68,7 @@ Combining technical indicators (RSI + Candlestick patterns) further improves acc
 
 ---
 
-## ⚙️ Tools Used
+### ⚙️ Tools Used
 Language: R (quantmod, TTR, PerformanceAnalytics)
 Data: Taiwan Stock Exchange shipping companies
 
